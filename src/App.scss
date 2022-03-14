@@ -1,0 +1,142 @@
+.app {
+  $business-card-width: 21rem;
+  $business-card-height: 12rem;
+
+  width: 100vw;
+  height: 100vh;
+
+  & > .app__main {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(132, 108, 156, 0.76);
+    overflow: hidden;
+
+    & .app__business-card {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      background-color: #32105c;
+      max-height: $business-card-height + 10rem;
+      max-width: $business-card-width + 10rem;
+      filter: drop-shadow(10px 10px 5px #543c7c);
+      border-radius: 15px;
+      border: 1px solid #ac9cbc;
+
+      &--content-card {
+        background-color: #543c7c;
+      }
+
+      & > .app__business-card-tech {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-height: 4rem;
+        gap: 1rem;
+      }
+
+      & > .app__business-card-content {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #32105c;
+        justify-content: center;
+      }
+
+      & .app_hyphen-divider {
+        margin: 1.5rem;
+        background-color: white;
+        width: 1px;
+        height: 100%;
+        border: 0;
+        transform: rotate(45deg);
+      }
+
+      & .app_vertical-divider {
+        margin: 1em 1em 2em;
+        background-image: linear-gradient(
+                        to bottom,
+                        #33135b 2%,
+                        #846c9c 50%,
+                        #33135b 98%
+        );
+        width: 1px;
+        height: 50%;
+        border: 0;
+      }
+
+      & .app__contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        %icon {
+          content: " ";
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          width: 1rem;
+          height: 1rem;
+          display: inline-block;
+          margin-right: 0.25rem;
+        }
+
+        & > .app__contact-info {
+          display: flex;
+          flex-direction: row;
+          gap: 0.25rem;
+
+          &::before {
+            @extend %icon;
+          }
+
+          &--email {
+            &::before {
+              background-image: url("./assets/email.png");
+            }
+          }
+
+          &--mobile {
+            &::before {
+              background-image: url("./assets/whatsapp.png");
+            }
+          }
+
+          &--github {
+            &::before {
+              background-image: url("./assets/github.png");
+            }
+          }
+
+          &--linkedin {
+            &::before {
+              background-image: url("./assets/linkedin.png");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .app__icon {
+    max-width: 1.75em;
+    max-height: 1.75rem;
+    filter: brightness(0) invert(1);
+  }
+}
