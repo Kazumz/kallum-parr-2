@@ -10,11 +10,13 @@
 
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     background-color: rgba(132, 108, 156, 0.76);
     overflow: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 
     & .app__business-card {
       width: 100%;
