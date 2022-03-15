@@ -13,34 +13,33 @@ import './App.scss';
 function App() {
     return (
         <div className="app">
-            <header className="app__header">
-                {/*Accessibility access, independent of visuals*/}
-            </header>
-
             <main className="app__main">
                 <article className="app__business-card">
                     <span className="app_hyphen-divider"/>
 
                     <span>
-                  <h1 className="app__header">Kallum Parr</h1>
-                  <p>Lead Software Engineer</p>
-              </span>
+                      <h1 className="app__header">Kallum Parr</h1>
+                      <p>Lead Software Engineer</p>
+                    </span>
 
                     <span className="app_hyphen-divider"/>
                 </article>
 
                 <article className="app__business-card app__business-card--content-card">
-                    <span className="app__business-card-tech">
-                        <img alt="Agile Methodology" className="app__icon" src={Agile}/>
-                        <img alt="Microsoft Technologies" className="app__icon" src={ASP}/>
-                        <img alt="Git Source Control" className="app__icon" src={Git}/>
-                        <img alt="React and Redux" className="app__icon" src={Rct}/>
-                        <img alt="CSS and SCSS" className="app__icon" src={Sass}/>
-                        <img alt="Database Technologies" className="app__icon" src={Sql}/>
-                        <img alt="JavaScript and TypeScript" className="app__icon" src={TypeScript}/>
-                    </span>
+                    <section className="app__business-card-tech">
+                        <h2 className="visually-hidden">Skills</h2>
+                        <ul className="app__business-card-tech__list">
+                            <img alt="Agile Methodology" className="app__icon" src={Agile}/>
+                            <img alt="Microsoft Technologies" className="app__icon" src={ASP}/>
+                            <img alt="Git Source Control" className="app__icon" src={Git}/>
+                            <img alt="React and Redux" className="app__icon" src={Rct}/>
+                            <img alt="CSS and SCSS" className="app__icon" src={Sass}/>
+                            <img alt="Database Technologies" className="app__icon" src={Sql}/>
+                            <img alt="JavaScript and TypeScript" className="app__icon" src={TypeScript}/>
+                        </ul>
+                    </section>
 
-                    <span className="app__business-card-content">
+                    <div className="app__business-card-content">
                         <div>
                             <h2>Kallum Parr</h2>
                             <p>Mumbles, Swansea</p>
@@ -59,7 +58,7 @@ function App() {
                             <a className="app__contact-info app__contact-info--linkedin"
                                href="https://www.linkedin.com/in/kallum-parr-83394465/">LinkedIn</a>
                         </address>
-                    </span>
+                    </div>
                 </article>
             </main>
         </div>
