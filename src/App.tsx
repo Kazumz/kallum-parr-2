@@ -49,14 +49,34 @@ function App() {
                         <hr className="app_vertical-divider"/>
 
                         <address className="app__contact-info">
-                            <a className="app__contact-info app__contact-info--email"
-                               href="mailto:kallum_parr@hotmail.com">Email</a>
-                            <a className="app__contact-info app__contact-info--mobile"
-                               href="tel:+447508787497">Mobile</a>
-                            <a className="app__contact-info app__contact-info--github"
-                               href="https://github.com/Kazumz">GitHub</a>
-                            <a className="app__contact-info app__contact-info--linkedin"
-                               href="https://www.linkedin.com/in/kallum-parr-83394465/">LinkedIn</a>
+                            <a
+                                className="app__contact-info app__contact-info--email"
+                                href="mailto:kallum_parr@hotmail.com"
+                            >
+                                Email
+                            </a>
+                            <a
+                                className="app__contact-info app__contact-info--mobile"
+                                href="tel:+447508787497"
+                            >
+                                Mobile
+                            </a>
+                            <a
+                                className="app__contact-info app__contact-info--github"
+                                href="https://github.com/Kazumz"
+                                target='_blank'
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+                            <a
+                                className="app__contact-info app__contact-info--linkedin"
+                                href="https://www.linkedin.com/in/kallum-parr-83394465/"
+                                target='_blank'
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </a>
                         </address>
                     </div>
                 </article>
