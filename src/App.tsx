@@ -26,8 +26,8 @@ function App() {
                 </article>
 
                 <article className="app__business-card app__business-card--content-card">
-                    <section className="app__business-card-tech">
-                        <h2 className="visually-hidden">Skills</h2>
+                    <section aria-labelledby="tech-list" className="app__business-card-tech">
+                        <h2 id="tech-list" className="visually-hidden">Skills</h2>
                         <ul className="app__business-card-tech__list">
                             <img alt="Agile Methodology" className="app__icon" src={Agile}/>
                             <img alt="Microsoft Technologies" className="app__icon" src={ASP}/>
