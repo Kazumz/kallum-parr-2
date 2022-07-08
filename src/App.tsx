@@ -42,7 +42,7 @@ function App() {
                     <div className="app__business-card-content">
                         <div>
                             <h2>Kallum Parr</h2>
-                            <p>Mumbles, Swansea</p>
+                            <p>Swansea</p>
                             <small>(Fully Remote)</small>
                         </div>
 
