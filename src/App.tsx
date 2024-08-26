@@ -19,7 +19,7 @@ function App() {
 
                     <span>
                       <h1 className="app__header">Kallum Parr</h1>
-                      <p>Lead Software Engineer</p>
+                      <p>Staff Software Engineer</p>
                     </span>
 
                     <span className="app_hyphen-divider"/>
